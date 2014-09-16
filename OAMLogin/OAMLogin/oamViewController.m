@@ -62,7 +62,6 @@
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
         [alertView show];
-        [self performSegueWithIdentifier:@"ShowError" sender:self];
         return;
     }
     NSError *error = nil;
@@ -142,7 +141,6 @@
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
         [alertView show];
-        [self performSegueWithIdentifier:@"ShowError" sender:self];
     }
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]
                                     initWithTitle:@"Login"
